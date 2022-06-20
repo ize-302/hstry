@@ -1,0 +1,134 @@
+.top-nav {
+  background-color: white;
+  position: sticky;
+  top: 0;
+  left: 0;
+  border-bottom: 1px solid #ddd;
+  display: flex;
+  align-items: center;
+  padding: 12px;
+  justify-content: space-between;
+  height: 30px;
+  h1 {
+    color: #000081;
+    display: flex;
+    gap: 4px;
+    align-items: center;
+    cursor: pointer;
+  }
+  button#add-url-button {
+    border: none;
+    background: #000081;
+    padding: 10px 12px;
+    border-radius: 3px;
+    color: white;
+    font-weight: 800;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  }
+
+  button#delete-button {
+    background: red;
+    border: none;
+    padding: 10px 12px;
+    color: white;
+    font-weight: 800;
+    cursor: pointer;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 3px;
+  }
+}
+
+.urls {
+  display: flex;
+  flex-direction: column;
+  margin-top: 12px;
+  padding-bottom: 40px;
+
+  .url-item {
+    border-bottom: 1px solid #ddd;
+    padding: 12px;
+    cursor: pointer;
+    &:hover {
+      transition: all 0.15s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
+      background-color: #000081;
+      color: white;
+    }
+    &:last-child {
+      border: none;
+    }
+  }
+
+  .history-item {
+    font-size: 0.9rem;
+  }
+}
+
+.page-title {
+  font-size: 15px;
+  padding-left: 12px;
+  margin-top: 12px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  color: #666;
+}
+
+/* empty state */
+#empty {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  display: grid;
+  place-items: center;
+  color: #999;
+}
+
+/* form */
+.add-url-form {
+  height: 100%;
+  width: 85%;
+  position: absolute;
+  display: grid;
+  place-items: center;
+  padding: 5%;
+  form {
+    display: flex;
+    width: 100%;
+    gap: 10px;
+    flex-direction: column;
+    input {
+      height: 30px;
+      width: 100%;
+      padding: 0 6px;
+    }
+    button {
+      height: 35px;
+      width: 20%;
+      background-color: #000081;
+      border: none;
+      color: white;
+      font-weight: 800;
+      border-radius: 3px;
+    }
+  }
+}
+
+/* footer */
+.footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  height: 30px;
+  background: white;
+  display: flex;
+  place-items: center;
+  justify-content: center;
+  width: 100%;
+  border-top: 1px solid #ddd;
+  font-size: 0.8rem;
+}
