@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
   "name": "HSTRY!",
-  "description": "Chrome Extension for tracking visits to selected URLs",
+  "description": "See url visits of sepcific URLs",
   "action": {
     "default_popup": "popup.html",
     "default_icon": "icon-34.png"
